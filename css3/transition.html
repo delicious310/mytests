@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin:20px auto;
+			-webkit-transition:all .5s ease .1s;
+			transition:all .5s ease .1s;
+		}
+		/*div:hover{
+			background-color: orange; 
+		}*/
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<script>
+		var oDiv = document.getElementById('div1');
+		oDiv.onclick = function(){
+			this.style.width = '300px';
+		};
+	</script>
+</body>
+</html>
